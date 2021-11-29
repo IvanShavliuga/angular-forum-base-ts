@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>Sample forum page</h1>
+
+  <p>Please liked message and delete spam, and answer users or quote</p>
+  <table class="msgbox">
+    <tbody *ngFor="let u of users" class="msgcnt">
+      <tr>
+        <td class="msgparam">🙍Name:</td>
+        <td class="msgval">{{u.name}}</td>
+
+        <td class="msgparam">🗺️Country:</td>
+        <td class="msgval">{{u.country}}</td>
+
+        <td class="msgparam">🎁Age:</td>
+        <td class="msgval">{{u.age }}</td>
+
+        <td class="msgparam">📅Date:</td>
+        <td class="msgval">{{u.date}}</td>
+
+        <td class="msgparam">⌚Time:</td>
+        <td class="msgval">{{u.time}}</td>
+
+        <td class="msgparam animlike" ng-click="liked(u.id)">💓Like:</td>
+        <td class="msgval" ng-click="liked(u.id)">{{u.like}}</td>
+      </tr>
+
+      <tr>
+        <td class="msgtxt" colspan="12">{{u.msg}}</td>
+      </tr>
+
+      <tr class="msgfoot">
+        <td ng-click="answer(u.id)">Answer</td>
+
+        <td ng-click="quote(u.id)">Quote</td>
+
+        <td ng-click="spam(u.id)" colspan="10">Spam</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

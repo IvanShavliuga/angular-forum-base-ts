@@ -1,0 +1,77 @@
+div {
+  text-align: center;
+}
+body, div {
+  background-color: gray;
+  padding: 20px;
+}
+h1 {
+  color: #ddd;
+  border-bottom: 3px dotted white;
+  text-align: center;
+}
+.msgbox {
+  background-color: #9f559f;
+  width: 100%;
+  border: none;
+}
+table {
+  border: none;
+  border-collapse: collapse;
+}
+.msgparam {
+  font-weight: 500;
+  font-size: 10px;
+}
+.msgval {
+  color: #f5f;
+  font-size: 10px;
+}
+.msgtxt {
+  background-color: #ccc;
+  height: 100px;
+  vertical-align: top;
+}
+.msgfoot {
+  background-color: #ccc;
+  border-top: 3px dotted #f0f;
+  font-size: 10px;
+  color: blue;
+}
+.msgcnt {
+  margin: 10px;
+}
+.animlike {
+  animation: like 3s infinite;
+}
+form {
+  margin-top: 20px;
+  border: 3px dotted white;
+  padding: 10px;
+}
+Label {
+  margin: 10px;
+  color: white;
+}
+input,
+textarea {
+  margin: 10px;
+  border-radius: 12px;
+  border: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  padding: 5px;
+}
+pre {
+  color: yellow;
+  background-color: red;
+}
+@keyframes like {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1.7);
+  }
+}
